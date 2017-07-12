@@ -1,6 +1,23 @@
+$(function () {
+    //获取浏览器可视区域宽高
+    var winwidth = $(window).width();
+    var winheight = $(window).height();
+    // $('.banner').css('height',winwidth*0.5);
+    $('.core').css('height',winheight);
 
- $(function () {
+
+     $('.header').mouseover(function () {
+        $('.header').css("background","rgba(0,0,0,0.7)")
+     });
+    $('.header').mouseout(function () {
+        if ($(document).scrollTop()>=550) {
+            $('.header').css('background',"rgba(0,0,0,0.7)");
+        }else{
+            $('.header').css('background',"rgba(0,0,0,0)");
+        }
+    });
      //header搜索效果
+
      $('#searchicon').click(function () {
          $('#searchercon').css('border-width','1px');
          $('#searchercon').animate({width:"100%"},300);
@@ -72,10 +89,11 @@
     });
      aWindow.scroll(function () {
 //         console.log(aBody.scrollTop());
-         if (aBody.scrollTop()>=650) {
-             aheader.css('background',"rgba(0,0,0,0.9)");
+         if (aBody.scrollTop()>=550) {
+             aheader.css('background',"rgba(0,0,0,0.7)");
          }else{
              aheader.css('background',"rgba(0,0,0,0)");
+             aheader.css('color',"white");
          }
      });
      aWindow.scroll(function () {

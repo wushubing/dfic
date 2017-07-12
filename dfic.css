@@ -1,6 +1,7 @@
 /*
 * 样式重置
 */
+html{font-size: 100px;color:black;}
 body{margin:0;padding:0;background:#fff;font-size:14px;line-height:22px;overflow: auto;font-family: -apple-system,BlinkMacSystemFont,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
 div,p,li{font-size:14px;}
 form,ul,li,p,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
@@ -8,7 +9,7 @@ input,select,button{font-size:13px;line-height:16px;outline: none;box-sizing: bo
 img{border:0;}
 ul,li{list-style-type:none;}
 li{font-size:14px;}
-a{text-decoration:none;color: white;}
+a{text-decoration:none;color: rgba(255,255,255,0.7);}
 a,button:hover{cursor: pointer;}
 *{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
 /*
@@ -16,6 +17,7 @@ a,button:hover{cursor: pointer;}
 */
 .wrapper{
     max-width: 2000px;
+    min-width: 1400px;
     text-align: center;
     width:100%;
     height:100%;
@@ -25,9 +27,9 @@ a,button:hover{cursor: pointer;}
 .header{
     width: 100%;
     min-width: 1400px;
-    height:90px;
-    line-height: 90px;
-    color: white;
+    height:.9rem;
+    line-height: .9rem;
+    color: rgba(0,0,0,0.8);
     position: fixed;
     top:0;
     left: 0;
@@ -41,7 +43,7 @@ a,button:hover{cursor: pointer;}
 .header .header_wide{
     width: 94%;
     margin:0 auto;
-    display: flex;
+
     max-width: 1800px;
 }
 .header_active{
@@ -54,7 +56,8 @@ a,button:hover{cursor: pointer;}
     background: rgba(0,0,0,0.7);
 }
 .header #brand{
-    flex:1;
+    width: 110px;
+    float: left;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
@@ -64,7 +67,8 @@ a,button:hover{cursor: pointer;}
     margin: 0 auto;
 }
 .header #navigation{
-    flex:6;
+    float: left;
+    width: auto;
 }
 #nav1{
     display: flex;
@@ -72,12 +76,13 @@ a,button:hover{cursor: pointer;}
 #nav1 li{
     justify-content: flex-start;
     text-align: center;
-    font-size: 16px;
+    font-size: .16rem;
     font-weight: 500;
-    height: 90px;
-    line-height: 90px;
-    padding: 0 27px;
+    height: .9rem;
+    line-height: .9rem;
+    padding: 0 .27rem;
     position: relative;
+    color: rgba(0,0,0,0.8);
 }
 #nav1 li:hover .nav2{
     display: block;
@@ -88,91 +93,93 @@ a,button:hover{cursor: pointer;}
     float: none;
     position: absolute;
     left:0;
-    top: 90px;
-    line-height: 25px;
-    background-color: rgba(0,0,0,0.8);
+    top: .9rem;
+    line-height: .25rem;
+    background-color: rgba(0,0,0,0.7);
 }
 .header .nav2 a{
     display: block;
-    font-size: 14px;
+    font-size: .14rem;
     font-weight: 200;
     text-align: left;
-    text-indent: 20px;
-    height: 30px;
+    text-indent: .2rem;
+    height: .3rem;
     padding: 0;
-    color: #ffffff;
-    line-height: 30px;
+    color: rgba(255,255,255,0.6);
+    line-height: .3rem;
 }
 .header .nav2 a:hover{
-    color: #009688;
-    text-indent: 35px;
+    color: rgba(255,255,255,0.9);
+    text-indent: .35rem;
 }
 .header a{
     display: inline-block;
-    height: 90px;
+    height: .9rem;
 }
 .header a:hover{
     font-weight: 700;
-    color: #009688;
+    color: rgba(255,255,255,0.9);
 }
 
 .header #searcher{
-    flex:2;
+    width: 250px;
+    float: right;
     text-align: right;
-    font-size: 16px;
-    height: 90px;
+    font-size: .16rem;
+    height: .9rem;
     overflow: hidden;
 }
 #searcher #searchercon{
-    width: 40px;
-    padding: 0 5px;
+    width: .4rem;
+    padding: 0 .05rem;
     display:inline-block;
-    height: 30px;
-    line-height: 30px;
-    margin: 30px 0;
+    height: .3rem;
+    line-height: .3rem;
+    margin: .3rem 0;
     border:0 solid rgba(255,255,255,0.7);
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: .15rem;
     overflow: hidden;
 }
 .header #searchercon button{
     float: left;
     width: 10%;
     border: none;
-    height: 28px;
-    line-height:28px;
+    height: .28rem;
+    line-height:.28rem;
     background-color: rgba(255,255,255,0);
 }
 .header #searchercon input{
     float: left;
     width: 80%;
-    font-size: 16px;
+    font-size: .16rem;
     border: none;
-    height: 28px;
-    line-height:28px;
+    height: .28rem;
+    line-height:.28rem;
     background-color: rgba(255,255,255,0);
 }
 .header #searchercon img{
-    margin-top: 3px;
-    height:20px;
-    width: 20px;
+    margin-top: .03rem;
+    height:.20rem;
+    width: .20rem;
     display: inline-block;
 }
 #searchercon .sear{
     display: inline-block;
 }
 .header #logreg{
-    flex:1;
-    color: gainsboro;
+    float: right;
+    width: 150px;
+    color: rgba(0,0,0,0.8);
 }
 .header #logreg button{
-    font-size: 16px;
+    font-size: .16rem;
     font-weight: 700;
     border:none;
-    border-radius: 13px;
+    border-radius: .13rem;
     text-align: center;
     width: 48%;
-    height:26px;
+    height:.26rem;
     box-sizing: border-box;
     color: white;
 }
@@ -193,12 +200,12 @@ a,button:hover{cursor: pointer;}
 */
 .banner{
     width: 100%;
-    height:820px;
+    height: auto;
     overflow: hidden;
 }
 .banner img{
     width: 100%;
-    height: 820px;
+    height: auto;
     position: relative;
 }
 .banner:hover .slick-prev{
@@ -257,15 +264,12 @@ a,button:hover{cursor: pointer;}
 .bannercon button:hover span{
     display: inline-block;
 }
-.banner:hover .bannercon2{
-
-}
 .banner:hover .director{
     display: block;
 }
 .linkcontent{
     width: 100%;
-    height: 418px;
+    height: auto;
 }
 .linkcontent #textcon{
     padding-top: 75px;
@@ -275,6 +279,7 @@ a,button:hover{cursor: pointer;}
     display: flex;
 }
 .linkcontent #textcon span{
+    font-family: "Microsoft YaHei";
     flex-grow: 0;
     width: 100px;
     font-size: 80px;
@@ -295,6 +300,7 @@ a,button:hover{cursor: pointer;}
 
 }
 .linkcontent div a{
+    cursor: none;
     flex: 1;
     height: 230px;
     display: flex;
@@ -309,13 +315,17 @@ a,button:hover{cursor: pointer;}
 }
 .core{
     width: 100%;
-    height:1000px;
+    height:auto;
+    min-height: 600px;
     overflow: hidden;
     display: flex;
     position: relative;
     background-color: black;
 }
 .core img{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
     position: absolute;
     left:0;
     top:0;
@@ -342,6 +352,7 @@ a,button:hover{cursor: pointer;}
     margin-left: 10%;
     transition: margin-top 0.5s ease;
     z-index: 99;
+    padding-bottom: 250px;
 }
 .core .core1 h3{
     color:grey;
@@ -370,11 +381,13 @@ a,button:hover{cursor: pointer;}
     z-index: 66;
 }
 .advertising{
-    padding-top: 120px;
     width:100%;
-    height:590px;
+    height:auto;
+    letter-spacing: 1px;
+}
+.advertising #adv_wrapper{
+    padding: 5% 0;
     display: flex;
-    letter-spacing: 2px;
 }
 .advertising .advleft{
     flex:3;
@@ -395,12 +408,12 @@ a,button:hover{cursor: pointer;}
     flex:2;
 }
 .advertising .advright h3{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 500;
     padding-bottom: 34px;
 }
 .advertising .advright h6{
-    width: 580px;
+    width: 90%;
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
@@ -408,7 +421,7 @@ a,button:hover{cursor: pointer;}
     margin-left: 24px;
 }
 .advertising .advright p{
-    width: 580px;
+    width: 90%;
     font-size: 14px;
     line-height: 30px;
     margin-left: 24px;
@@ -547,6 +560,7 @@ a,button:hover{cursor: pointer;}
     color: #6A6A6A;
 }
 #footerleft p{
+    text-align: left;
     color: #6A6A6A;
     font-size: 14px;
     line-height: 100px;
@@ -569,9 +583,18 @@ a,button:hover{cursor: pointer;}
     display: block;
     cursor: pointer;
 }
+#footerright #footr1 p{
+    text-align: right;
+}
 #footerright #footr1 a{
     display: inline-block;
-    margin-top: 50px;
+    margin: 10px 4px;
+    width: 35px;
+    height: 35px;
+}
+#footerright #footr1 a img{
+    width: 35px;
+    height: 35px;
 }
 #footerright #footr2{
     width: 50%;
