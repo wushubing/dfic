@@ -7,22 +7,27 @@ $(function () {
 
 
      $('.header').mouseover(function () {
-        $('.header').css("background","rgba(0,0,0,0.7)")
+        $('.header').css("background","rgba(255,255,255,0.7)");
+        $('.header').addClass("headerhover");
+
      });
     $('.header').mouseout(function () {
         if ($(document).scrollTop()>=550) {
-            $('.header').css('background',"rgba(0,0,0,0.7)");
+            $('.header').css('background',"rgba(255,255,255,0.7)");
         }else{
-            $('.header').css('background',"rgba(0,0,0,0)");
+            $('.header').css('background',"rgba(255,255,255,0)");
         }
     });
      //header搜索效果
 
-     $('#searchicon').click(function () {
+     $('#searchicon').click(function (e) {
+         e.stopPropagation();
          $('#searchercon').css('border-width','1px');
          $('#searchercon').animate({width:"100%"},300);
+         $('#searchtext').focus();
      });
-     $('#closeicon').click(function () {
+     $(document).click(function (e) {
+         e.stopPropagation();
          $('#searchercon').css('border-width','0px');
          $('#searchercon').animate({width:"40px"},300);
      });
@@ -89,11 +94,19 @@ $(function () {
     });
      aWindow.scroll(function () {
 //         console.log(aBody.scrollTop());
-         if (aBody.scrollTop()>=550) {
-             aheader.css('background',"rgba(0,0,0,0.7)");
+         if (aBody.scrollTop()>=500) {
+             $('.header').css('background',"rgba(255,255,255,0.9)");
+             $('.header a').css("color","rgba(0,0,0,0.7)");
+             $('#logreg button').css("color","rgba(0,0,0,0.7)");
+             $('#searchicon').css("background-image",'url("image/Search.png")');
+             $('#register').css('border-color','rgba(0,0,0,0.7)');
+
          }else{
-             aheader.css('background',"rgba(0,0,0,0)");
-             aheader.css('color',"white");
+             $('.header').css('background',"rgba(255,255,255,0)");
+             $('.header a').css("color","rgba(255,255,255,0.7)");
+             $('#logreg button').css("color","rgba(255,255,255,0.7)");
+             $('#searchicon').css("background-image",'url("image/Search1.png")');
+             $('#register').css('border-color','rgba(255,255,255,0.7)');
          }
      });
      aWindow.scroll(function () {
@@ -103,7 +116,7 @@ $(function () {
          });
      //回到顶部效果
      aWindow.scroll(function () {
-         if(aBody.scrollTop()>=800) {
+         if(aBody.scrollTop()>=300) {
              aBack.fadeIn(1000);
          }else{
              aBack.fadeOut(1000);
