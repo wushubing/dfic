@@ -37,9 +37,9 @@ a,button:hover{cursor: pointer;}
     -moz-transition: background 0.8s; /* Firefox 4 */
     -webkit-transition: background 0.8s; /* Safari 和 Chrome */
     -o-transition: background 0.8s; /* Opera */
-    border-bottom: 1px solid rgba(10,10,10,0.05);
+
     font-size: 16px;
-    box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
+    box-shadow: 10px 5px 20px rgba(0,0,0,0.04);
 }
 .header .header_wide{
     padding: 0 40px;
@@ -47,7 +47,7 @@ a,button:hover{cursor: pointer;}
     max-width: 1800px;
 }
 .header:hover{
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,1);
 }
 .header:hover a{
     color: rgba(0,0,0,0.7);
@@ -383,6 +383,7 @@ a,button:hover{cursor: pointer;}
     display: block;
     transition: color 0.5s ease;
     z-index: 99;
+    text-align: left;
 }
 .core1:hover div{
     margin-top: 350px;
@@ -393,6 +394,7 @@ a,button:hover{cursor: pointer;}
 .core1:hover p{
     color: rgba(255,255,255,0.9);
     z-index: 66;
+    text-align: left;
 }
 .advertising{
     width:100%;
@@ -471,8 +473,8 @@ a,button:hover{cursor: pointer;}
 }
 .videobox #cover a{
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     color: white;
     font-size: 50px;
     line-height: 100px;
@@ -482,12 +484,13 @@ a,button:hover{cursor: pointer;}
 .videobox #cover a img{
     width: 70px;
     height: 70px;
-    margin: 15px;
+    margin-top: 15px;
+
 }
 .videobox #cover a:hover img{
     width: 80px;
     height: 80px;
-    margin: 10px;
+    margin-top: 10px;
 }
 .videobox #cover #my-video{
     margin:auto;

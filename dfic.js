@@ -7,7 +7,7 @@ $(function () {
 
 
      $('.header').mouseover(function () {
-        $('.header').css("background","rgba(255,255,255,0.9)");
+        $('.header').css("background","rgba(255,255,255,1)");
          $('.header a').css("color","rgba(0,0,0,0.7)");
          $('#logreg button').css("color","rgba(0,0,0,0.7)");
          $('#searchicon').css("background-image",'url("image/soblack.png")');
@@ -17,7 +17,7 @@ $(function () {
      });
     $('.header').mouseout(function () {
         if ($(document).scrollTop()>=550) {
-            $('.header').css('background',"rgba(255,255,255,0.7)");
+            $('.header').css('background',"rgba(255,255,255,1)");
         }else{
             $('.header').css('background',"rgba(255,255,255,0)");
             $('.header a').css("color","rgba(255,255,255,0.7)");
@@ -104,7 +104,7 @@ $(function () {
      aWindow.scroll(function () {
 //         console.log(aBody.scrollTop());
          if (aBody.scrollTop()>=400) {
-             $('.header').css('background',"rgba(255,255,255,0.9)");
+             $('.header').css('background',"rgba(255,255,255,1)");
              $('.header a').css("color","rgba(0,0,0,0.7)");
              $('#logreg button').css("color","rgba(0,0,0,0.7)");
              $('#searchicon').css("background-image",'url("image/soblack.png")');
