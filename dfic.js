@@ -8,7 +8,11 @@ $(function () {
 
      $('.header').mouseover(function () {
         $('.header').css("background","rgba(255,255,255,0.7)");
-        $('.header').addClass("headerhover");
+         $('.header a').css("color","rgba(0,0,0,0.7)");
+         $('#logreg button').css("color","rgba(0,0,0,0.7)");
+         $('#searchicon').css("background-image",'url("image/Search.png")');
+         $('#register').css('border-color','rgba(0,0,0,0.7)');
+
 
      });
     $('.header').mouseout(function () {
@@ -16,6 +20,10 @@ $(function () {
             $('.header').css('background',"rgba(255,255,255,0.7)");
         }else{
             $('.header').css('background',"rgba(255,255,255,0)");
+            $('.header a').css("color","rgba(255,255,255,0.7)");
+            $('#logreg button').css("color","rgba(255,255,255,0.7)");
+            $('#searchicon').css("background-image",'url("image/Search1.png")');
+            $('#register').css('border-color','rgba(255,255,255,0.7)');
         }
     });
      //header搜索效果
