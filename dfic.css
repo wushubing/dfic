@@ -29,7 +29,6 @@ a,button:hover{cursor: pointer;}
     min-width: 1400px;
     height:90px;
     line-height: 90px;
-    color: rgba(0,0,0,0.8);
     position: fixed;
     top:0;
     left: 0;
@@ -38,8 +37,9 @@ a,button:hover{cursor: pointer;}
     -moz-transition: background 0.8s; /* Firefox 4 */
     -webkit-transition: background 0.8s; /* Safari 和 Chrome */
     -o-transition: background 0.8s; /* Opera */
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(10,10,10,0.05);
     font-size: 16px;
+    box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
 }
 .header .header_wide{
     padding: 0 40px;
@@ -47,7 +47,7 @@ a,button:hover{cursor: pointer;}
     max-width: 1800px;
 }
 .header:hover{
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.9);
 }
 .header:hover a{
     color: rgba(0,0,0,0.7);
@@ -150,7 +150,7 @@ a,button:hover{cursor: pointer;}
     height: .3rem;
     line-height: .3rem;
     margin: .3rem 0;
-    border:0 solid rgba(255,255,255,0.7);
+    border:0 solid rgba(0,0,0,0.7);
     box-sizing: border-box;
     border-radius: .15rem;
     overflow: hidden;
@@ -179,7 +179,7 @@ a,button:hover{cursor: pointer;}
     display: inline-block;
 }
 #searchercon #searchicon{
-    background: url("image/Search1.png") no-repeat center;
+    background: url("image/sowhite.png") no-repeat center;
     background-size: 20px 20px;
 }
 #searchercon #closeicon{
@@ -231,10 +231,10 @@ a,button:hover{cursor: pointer;}
     position: relative;
 }
 .banner:hover .slick-prev{
-    background: url("image/arror2_left.png") no-repeat;
+    background: url("image/arror2_left.png") no-repeat center;
 }
 .banner:hover .slick-next{
-    background: url("image/arro2_right.png") no-repeat;
+    background: url("image/arro2_right.png") no-repeat center;
 }
 /*
 .banner .director{
@@ -282,12 +282,12 @@ a,button:hover{cursor: pointer;}
     letter-spacing: 0.1em;
     text-align: center;
     line-height: 132px;
-    padding-top: 30px;
+
 }
 .linkcontent #textcon{
     height: auto;
     width: 1200px;
-    margin:0 auto;
+    margin:0 auto 80px auto;
     display: flex;
 }
 .linkcontent #textcon span{
@@ -297,28 +297,33 @@ a,button:hover{cursor: pointer;}
     width: 1010px;
     text-align: center;
     line-height: 30px;
-    font-size: 14px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
 }
 .linkcontent #piccon{
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+.linkcontent #piccon div{
+    margin-left: 10%;
+    width: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 .linkcontent div a{
     cursor: none;
     flex: 1;
-    height: 260px;
+    height: 300px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 200px 0 0;
+    opacity: 0.2;
 
 }
 .linkcontent  a img{
     display: inline-flex;
-    width:100px;
+    width:118px;
     height: 140px;
 }
 .core{
@@ -404,7 +409,6 @@ a,button:hover{cursor: pointer;}
 .advertising .advleft #advimg{
     width: 80%;
     height: 360px;
-
     position: relative;
     display: flex;
 }
@@ -416,8 +420,10 @@ a,button:hover{cursor: pointer;}
     box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
 }
 .advertising .advright{
+    padding: 200px 0 0;
     flex:2;
     text-align: left;
+    opacity: 0.2;
 }
 .advertising .advright h3{
     font-size: 32px;
@@ -615,10 +621,10 @@ a,button:hover{cursor: pointer;}
     width: 50%;
     height: 180px;
     float: right;
-    text-align: right;
+    text-align: center;
 }
 #footerright p{
-    text-align: center;
+    text-align: left;
     font-size: 13px;
     color: #6A6A6A;
     line-height: 24px;

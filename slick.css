@@ -30,10 +30,10 @@
 
 .slick-prev:before, .slick-next:before { font-family: "slick"; font-size: 50px; line-height: 1; color: white; opacity: 0.85; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
-.slick-prev { left: 25px;background: url("image/arror1_left.png")no-repeat;}
+.slick-prev { left: 25px;background: url("image/arror1_left.png")no-repeat center;}
 /*.slick-prev:before { content: "\3c"; } */
 
-.slick-next { right: 55px;background: url("image/arror1_right.png")no-repeat; }
+.slick-next { right: 55px;background: url("image/arror1_right.png")no-repeat center; }
 /* .slick-next:before { content: "\3e"; } */
 
 /* Dots */

@@ -7,10 +7,10 @@ $(function () {
 
 
      $('.header').mouseover(function () {
-        $('.header').css("background","rgba(255,255,255,0.7)");
+        $('.header').css("background","rgba(255,255,255,0.9)");
          $('.header a').css("color","rgba(0,0,0,0.7)");
          $('#logreg button').css("color","rgba(0,0,0,0.7)");
-         $('#searchicon').css("background-image",'url("image/Search.png")');
+         $('#searchicon').css("background-image",'url("image/soblack.png")');
          $('#register').css('border-color','rgba(0,0,0,0.7)');
 
 
@@ -22,7 +22,7 @@ $(function () {
             $('.header').css('background',"rgba(255,255,255,0)");
             $('.header a').css("color","rgba(255,255,255,0.7)");
             $('#logreg button').css("color","rgba(255,255,255,0.7)");
-            $('#searchicon').css("background-image",'url("image/Search1.png")');
+            $('#searchicon').css("background-image",'url("image/sowhite.png")');
             $('#register').css('border-color','rgba(255,255,255,0.7)');
         }
     });
@@ -92,34 +92,36 @@ $(function () {
     var ali      = $('#logolist li');
     var aBack    = $('#back');
 
-    aWindow.scroll(function () {
-        if (aBody.scrollTop()>=1250){
-            Advimg1.animate({opacity:"1",top:"20px"},100);
-            Advimg2.animate({opacity:"1",top:"0px"},200);
-            Advimg3.animate({opacity:"1",top:"30px"},300);
-            Advimg4.animate({opacity:"1",top:"60px"},400);
+        aWindow.scroll(function () {
+        if (aBody.scrollTop()>=1900){
+            Advimg1.animate({opacity:"1",top:"20px"},200);
+            Advimg2.animate({opacity:"1",top:"0px"},300);
+            Advimg3.animate({opacity:"1",top:"30px"},400);
+            Advimg4.animate({opacity:"1",top:"60px"},500);
+            $('.advright').animate({padding:'0',opacity:'1'},400);
         }
     });
      aWindow.scroll(function () {
 //         console.log(aBody.scrollTop());
-         if (aBody.scrollTop()>=500) {
+         if (aBody.scrollTop()>=400) {
              $('.header').css('background',"rgba(255,255,255,0.9)");
              $('.header a').css("color","rgba(0,0,0,0.7)");
              $('#logreg button').css("color","rgba(0,0,0,0.7)");
-             $('#searchicon').css("background-image",'url("image/Search.png")');
+             $('#searchicon').css("background-image",'url("image/soblack.png")');
              $('#register').css('border-color','rgba(0,0,0,0.7)');
+             $('#piccon a').animate({padding:'0',opacity:1},300);
 
          }else{
              $('.header').css('background',"rgba(255,255,255,0)");
              $('.header a').css("color","rgba(255,255,255,0.7)");
              $('#logreg button').css("color","rgba(255,255,255,0.7)");
-             $('#searchicon').css("background-image",'url("image/Search1.png")');
+             $('#searchicon').css("background-image",'url("image/sowhite.png")');
              $('#register').css('border-color','rgba(255,255,255,0.7)');
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=2600) {
-             ali.animate({margin:"0px",opacity:'1'},400);
+         if (aBody.scrollTop()>=2700) {
+             ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
      //回到顶部效果
