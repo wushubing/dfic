@@ -365,7 +365,7 @@ a,button:hover{cursor: pointer;}
     margin-left: 10%;
     transition: margin-top 0.5s ease;
     z-index: 99;
-    padding-bottom: 250px;
+    
 }
 .core .core1 h3{
     color:rgba(255,255,255,0.6);
