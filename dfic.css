@@ -224,10 +224,16 @@ a,button:hover{cursor: pointer;}
     width: 100%;
     height: auto;
     overflow: hidden;
+    position: relative;
+}
+.banner .imglist a{
+    display: inline-block;
+    width: 100%;
+    height:auto;
+    position: relative;
 }
 .banner img{
-    width: 100%;
-    position: relative;
+   position: static;
 }
 .banner:hover .slick-prev{
     background: url("image/arror2_left.png") no-repeat center;
@@ -235,26 +241,9 @@ a,button:hover{cursor: pointer;}
 .banner:hover .slick-next{
     background: url("image/arro2_right.png") no-repeat center;
 }
-/*
-.banner .director{
-    display: none;
-}
-.banner .director span{
-    cursor: pointer;
+.banner .bancon{
     position: absolute;
-    top:48%;
-}
-#arrow_left{
-    left:50px;
-}
-#arrow_right{
-    right:50px;
-}
-*/
-
-.bannercon{
-    position: absolute;
-    left:0;
+    left: 0;
     bottom: 0;
     height: 160px;
     width: 100%;
@@ -263,7 +252,7 @@ a,button:hover{cursor: pointer;}
     background-color: rgba(0,0,0,0.6);
     z-index: 99;
 }
-.bannercon h3{
+.bancon h3{
     font-size: 28px;
     font-weight:500;
     color:#ffffff;
@@ -271,8 +260,11 @@ a,button:hover{cursor: pointer;}
     line-height: 68px;
     margin-top: 20px;
 }
-.bannercon span{
+.bancon p{
     font-size: 16px;
+    height: 50px;
+}
+.bancon p span{
     width: auto;
     color: white;
     padding: 8px 20px;
@@ -464,8 +456,9 @@ a,button:hover{cursor: pointer;}
     position: relative;
     background-color: gray;
 }
-.videobox video{
+.videobox #video1{
     width: 100%;
+    margin-top: -500px;
 }
 .videobox #cover{
     width: 100%;

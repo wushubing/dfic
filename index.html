@@ -14,7 +14,7 @@
     <script type="text/javascript" src="slick.min.js"></script>
     <link rel="stylesheet" href="slick.css">
     <link rel="stylesheet" href="dfic.css">
-    <link href="video-js.min.css" rel="stylesheet">
+    <link href="video-js.css" rel="stylesheet">
     <script src="dfic.js"></script>
 </head>
 <body>
@@ -59,58 +59,42 @@
         <div class="banner">
             <div class="imglist">
                 <div>
-                    <a><img src="image/banner5.jpg">
-                        <div class="bannercon">
-                            <div>
-                                <h3>不定义高度，只是云海巅峰</h3>
-                                <p><span>高端视觉创意整合营销平台</span></p>
-                            </div>
-                        </div>
-                    </a>
+                    <a><img src="image/banner5.jpg"></a>
                 </div>
                 <div>
-                    <a><img src="image/banner2.jpg">
-                        <div class="bannercon">
-                            <div>
-                                <h3>我们对视觉美，从不将就</h3>
-                                <p><span>高端视觉创意整合营销平台</span></p>
-                            </div>
-                        </div>
-                    </a>
+                    <a><img src="image/banner3.jpg"></a>
                 </div>
                 <div>
-                    <a><img src="image/banner1.jpg">
-                        <div class="bannercon">
-                            <div>
-                                <h3>因为热爱，所以专业</h3>
-                                <p><span>高端视觉创意整合营销平台</span></p>
-                            </div>
-                        </div>
-                    </a>
+                    <a><img src="image/banner4.jpg"></a>
                 </div>
                 <div>
-                    <a><img src="image/banner3.jpg">
-                        <div class="bannercon">
-                            <div>
-                                <h3>泛舟江渚之上，看天地悠然</h3>
-                                <p><span>高端视觉创意整合营销平台</span></p>
-                            </div>
-                        </div>
-                    </a>
+                    <a><img src="image/banner1.jpg"></a>
                 </div>
                 <div>
-                    <a><img src="image/banner4.jpg">
-                        <div class="bannercon">
-                            <div>
-                                <h3>镜头所到之处，皆是风景</h3>
-                                <p><span>高端视觉创意整合营销平台</span></p>
-                            </div>
-                        </div>
-                    </a>
+                    <a><img src="image/banner2.jpg"></a>
                 </div>
             </div>
-            <div id="director">
-                <span></span>
+            <div class="bancon">
+                <div>
+                    <h3>不定义高度，只是云海巅峰</h3>
+                    <p><span>高端视觉创意整合营销平台</span></p>
+                </div>
+                <div>
+                    <h3>泛舟江渚之上，看天地悠然</h3>
+                    <p><span>高端视觉创意整合营销平台</span></p>
+                </div>
+                <div>
+                    <h3>镜头所到之处，皆是风景</h3>
+                    <p><span>高端视觉创意整合营销平台</span></p>
+                </div>
+                <div>
+                    <h3>因为热爱，所以专业</h3>
+                    <p><span>高端视觉创意整合营销平台</span></p>
+                </div>
+                <div>
+                    <h3>我们对视觉美，从不将就</h3>
+                    <p><span>高端视觉创意整合营销平台</span></p>
+                </div>
             </div>
         </div>
 
@@ -200,7 +184,7 @@
 
         </div>
         <div class="videobox">
-            <video autoplay="autoplay" loop="loop" muted="muted" preload="auto" controls="controls">
+            <video autoplay="autoplay" loop="loop" muted="muted" preload="auto" id="video1">
                 <source src="image/Nature.mp4" type="video/mp4">
                 <source src="" type="video/ogg">
                 您的浏览器不支持此功能。
@@ -213,8 +197,8 @@
                 <a class="videoshow"><img src="image/play.png"></a>
                 <div class="modal">
                     <a href="#" class="closeBtn"></a>
-                    <video controls="controls" autoplay="autoplay" height="600" width="1000" id="my-video" class="video-js  vjs-big-play-centered" data-setup="{}">
-                        <source src="image/Nature.mp4" type="video/mp4">
+                    <video controls="controls" autoplay="autoplay" height="600" width="900" id="my-video" class="video-js vjs-default-skin  vjs-big-play-centered" data-setup="{}">
+                        <source src="http://v.youku.com/v_show/id_XMjgzNjkyODAzMg==.html?spm=a2h0k.8191407.0.0&from=s1.8-1-1.2" type="video/mp4">
                         <source src="" type="video/ogg">
                         您的浏览器不支持此功能。
                     </video>

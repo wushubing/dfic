@@ -1,5 +1,5 @@
 /* Slider */
-.slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: none; touch-action: none; -webkit-tap-highlight-color: transparent; }
+.slick-slider { display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: none; touch-action: none; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
 .slick-list:focus { outline: none; }
@@ -37,7 +37,7 @@
 /* .slick-next:before { content: "\3e"; } */
 
 /* Dots */
-.slick-slider { margin-bottom: 30px; }
+.slick-slider { margin-bottom: 0; }
 
 .slick-dots { position: absolute; bottom: 180px; list-style: none; display: block; text-align: center; padding: 0px; width: 100%; }
 .slick-dots li { position: relative; display: inline-block; height: 20px; width: 20px; margin: 0px 5px; padding: 0px; cursor: pointer; }

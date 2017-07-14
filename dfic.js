@@ -2,7 +2,7 @@ $(function () {
     //获取浏览器可视区域宽高
     var winwidth = $(window).width();
     var winheight = $(window).height();
-     $('.banner img').css('height',winheight);
+     $('.banner').css('height',winheight);
     $('.core').css('height',winheight);
 
 
@@ -78,8 +78,24 @@ $(function () {
          infinite:true,
          speed:300,
          slidesToShow:1,
-         adaptiveHeight:true
+         adaptiveHeight:true,
+         pauseOnHover:true
      });
+     $('.bancon').slick({
+         autoplay:true,
+         autoplaySpeed:3000,
+         slidesToShow:1,
+         arrows:false,
+         pauseOnHover:true
+     });
+     $('.banner').mouseenter(function () {
+         $('.imglist').slickPause();
+         $('.bancon').slickPause()
+     });
+    $('.banner').mouseout(function () {
+        $('.imglist').slickPlay();
+        $('.bancon').slickPlay();
+    });
 
      //导航栏出现在特定区域
     var aWindow = $(window);
