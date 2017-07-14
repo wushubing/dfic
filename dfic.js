@@ -96,6 +96,12 @@ $(function () {
         $('.imglist').slickPlay();
         $('.bancon').slickPlay();
     });
+    $('.slick-prev').click(function () {
+        $('.bancon').slickPrev();
+    });
+    $('.slick-next').click(function () {
+        $('.bancon').slickNext();
+    });
 
      //导航栏出现在特定区域
     var aWindow = $(window);
