@@ -2,7 +2,7 @@ $(function () {
     //获取浏览器可视区域宽高
     var winwidth = $(window).width();
     var winheight = $(window).height();
-    // $('.banner').css('height',winwidth*0.5);
+     $('.banner img').css('height',winheight);
     $('.core').css('height',winheight);
 
 
@@ -120,7 +120,7 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=2700) {
+         if (aBody.scrollTop()>=3200) {
              ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
@@ -133,7 +133,6 @@ $(function () {
          }
      });
      aBack.click(function () {
-
          $('body,html').animate({ scrollTop: "0" }, 500);
          return false;
      });
@@ -144,89 +143,12 @@ $(function () {
          $('.modal').css("display","block");
      });
      $('#my-video').click(function (e) {
-
          e.stopPropagation();
      });
      $('.modal').click(function () {
          $('.modal').css("display","none");
          return false;
      });
-
-
-
-
-
-//     var i = 0;
-//
-//     var clone = $("#banner .img li").first().clone();//克隆第一张图片
-//     $("#banner .img").append(clone);//复制到列表最后
-//     var size = $("#banner .img li").size();
-//
-//
-//     for (var j = 0; j < size-1; j++) {
-//         $("#banner .num").append("<li></li>");
-//     }
-//
-//     $("#banner .num li").first().addClass("on");
-//
-//     /*自动轮播*/
-//
-//     var t = setInterval(function () { i++; move();},2000);
-//
-//     /*鼠标悬停事件*/
-//
-//     $("#banner").hover(function () {
-//         clearInterval(t);//鼠标悬停时清除定时器
-//     }, function () {
-//         t = setInterval(function () { i++; move(); }, 2000); //鼠标移出时清除定时器
-//     });
-//
-//
-//
-//
-//     /*鼠标滑入原点事件*/
-//
-//     $("#banner .num li").hover(function () {
-//
-//         var index = $(this).index();//获取当前索引值
-//         i = index;
-//         $("#banner .img").stop().animate({ left: -index * 1000 }, 1000);
-//         $(this).addClass("on").siblings().removeClass("on");
-//     });
-//
-//
-//
-//     /*向左按钮*/
-//     $("#banner .btn_l").click(function () {
-//         i++;
-//         move();
-//     })
-//
-//
-//     /*向右按钮*/
-//     $("#banner .btn_r").click(function () {
-//         i--;
-//         move();
-//     })
-//
-//     /*移动事件*/
-//     function move() {
-//         if (i == size) {
-//             $("#banner .img").css({ left: 0 });
-//             i = 1;
-//         }
-//         if (i == -1) {
-//             $("#banner .img").css({ left: -(size - 1) * 1980 });
-//             i = size - 2;
-//         }
-//         $("#banner .img").stop().animate({ left: -i * 1980 }, 1000);
-//
-//         if (i == size - 1) {
-//             $("#banner .num li").eq(0).addClass("on").siblings().removeClass("on");
-//         } else {
-//             $("#banner .num li").eq(i).addClass("on").siblings().removeClass("on");
-//         }
-//     }
  });
 
 

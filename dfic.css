@@ -227,7 +227,7 @@ a,button:hover{cursor: pointer;}
 }
 .banner img{
     width: 100%;
-    height: auto;
+    height:100%;
     position: relative;
 }
 .banner:hover .slick-prev{
@@ -257,17 +257,29 @@ a,button:hover{cursor: pointer;}
     position: absolute;
     left:0;
     bottom: 0;
-    height: 62px;
+    height: 160px;
     width: 100%;
     text-align: center;
-    background-color: rgba(0,0,0,0.3);
+    letter-spacing: 0.1em;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 99;
 }
 .bannercon h3{
-    font-size: 20px;
+    font-size: 28px;
     font-weight:500;
     color:#ffffff;
     width: 100%;
-    line-height: 62px;
+    line-height: 68px;
+    margin-top: 20px;
+}
+.bannercon span{
+    font-size: 16px;
+    width: auto;
+    color: white;
+    padding: 8px 20px;
+    line-height: 32px;
+    border:1px solid white;
+    border-radius: 16px;
 }
 .banner:hover .director{
     display: block;
@@ -276,18 +288,18 @@ a,button:hover{cursor: pointer;}
     width: 100%;
     height: auto;
 }
-.linkcontent h3{
+/*.linkcontent h3{
     font-size: 32px;
     font-weight: 500;
     letter-spacing: 0.1em;
     text-align: center;
     line-height: 132px;
 
-}
+}*/
 .linkcontent #textcon{
     height: auto;
     width: 1200px;
-    margin:0 auto 80px auto;
+    margin: 100px auto;
     display: flex;
 }
 .linkcontent #textcon span{
@@ -296,8 +308,8 @@ a,button:hover{cursor: pointer;}
 .linkcontent #textcon div{
     width: 1010px;
     text-align: center;
-    line-height: 30px;
-    font-size: 16px;
+    line-height: 36px;
+    font-size: 18px;
     letter-spacing: 0.06em;
 }
 .linkcontent #piccon{
@@ -312,7 +324,7 @@ a,button:hover{cursor: pointer;}
 .linkcontent div a{
     cursor: none;
     flex: 1;
-    height: 300px;
+    height: 340px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -364,8 +376,9 @@ a,button:hover{cursor: pointer;}
     margin-top: 400px;
     margin-left: 10%;
     transition: margin-top 0.5s ease;
-    z-index: 99;
-    
+    z-index: 9;
+    pointer-events: none;
+
 }
 .core .core1 h3{
     color:rgba(255,255,255,0.6);
@@ -374,6 +387,7 @@ a,button:hover{cursor: pointer;}
     line-height: 60px;
     text-align: left;
     z-index: 99;
+
 }
 .core .core1 p{
     width: 180px;
@@ -578,7 +592,7 @@ a,button:hover{cursor: pointer;}
     line-height: 50px;
 }
 #footerleft span{
-    display: block;
+    display: inline-block;
     font-size: 12px;
     line-height: 26px;
     color: #6A6A6A;
