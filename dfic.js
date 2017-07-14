@@ -90,10 +90,16 @@ $(function () {
      });
      $('.banner').mouseenter(function () {
          $('.imglist').slickPause();
-         $('.bancon').slickPause()
+         $('.bancon').slickPause();
      });
     $('.banner').mouseout(function () {
         $('.imglist').slickPlay();
+        $('.bancon').slickPlay();
+    });
+    $('.imglist').mouseenter(function () {
+        $('.bancon').slickPause();
+    });
+    $('.imglist').mouseout(function () {
         $('.bancon').slickPlay();
     });
     $('.slick-prev').click(function () {
