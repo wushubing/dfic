@@ -3,7 +3,9 @@ $(function () {
     var winwidth = $(window).width();
     var winheight = $(window).height();
      $('.banner').css('height',winheight);
+     $('.imglist a').css('height',winheight);
     $('.core').css('height',winheight);
+    $('.core').css("background-size","100% 100%");
 
 
      $('.header').mouseover(function () {
@@ -42,34 +44,60 @@ $(function () {
 
 
      //core部分代码
-     $('.pic1').mouseover(function (e) {
-         $('.core img').css("opacity","0");
-         $('.img1').animate({opacity:"0.8"},300);
+     $('.pic1').mouseenter(function (e) {
+         $('.img1').fadeIn(300);
          e.stopPropagation();
      });
-     $('.pic2').mouseover(function (e) {
-         $('.core img').css("opacity","0");
-         $('.img2').animate({opacity:"0.8"},300);
+    $('.pic1').mouseout(function (e) {
+        $('.img1').fadeOut(300);
+        $('.core').css("background","url(image/hx1.jpg)");
+        $('.core').css("background-size","100% 100%");
+        e.stopPropagation();
+    });
+     $('.pic2').mouseenter(function (e) {
+         $('.img2').fadeIn(300);
          e.stopPropagation();
      });
-     $('.pic3').mouseover(function (e) {
-         $('.core img').css("opacity","0");
-         $('.img3').animate({opacity:"0.8"},300);
+    $('.pic2').mouseout(function (e) {
+        $('.img2').fadeOut(300);
+        $('.core').css("background","url(image/hx2.jpg)");
+        $('.core').css("background-size","100% 100%");
+        e.stopPropagation();
+    });
+     $('.pic3').mouseenter(function (e) {
+         $('.img3').fadeIn(300);
          e.stopPropagation();
      });
-     $('.pic4').mouseover(function (e) {
-         $('.core img').css("opacity","0");
-         $('.img4').animate({opacity:"0.8"},300);
+    $('.pic3').mouseout(function (e) {
+        $('.img3').fadeOut(300);
+        $('.core').css("background","url(image/hx3.jpg)");
+        $('.core').css("background-size","100% 100%");
+        e.stopPropagation();
+    });
+     $('.pic4').mouseenter(function (e) {
+         $('.img4').fadeIn(300);
          e.stopPropagation();
      });
-     $('.pic5').mouseover(function (e) {
-         $('.core img').css("opacity","0");
-         $('.img5').animate({opacity:"0.8"},300);
+    $('.pic4').mouseout(function (e) {
+        $('.img4').fadeOut(300);
+        $('.core').css("background","url(image/hx4.jpg)");
+        $('.core').css("background-size","100% 100%");
+        e.stopPropagation();
+    });
+     $('.pic5').mouseenter(function (e) {
+         $('.img5').fadeIn(300);
          e.stopPropagation();
      });
+    $('.pic5').mouseout(function (e) {
+        $('.img5').fadeOut(300);
+        $('.core').css("background","url(image/hx5.jpg)");
+        $('.core').css("background-size","100% 100%");
+        e.stopPropagation();
+    });
 
 
-     // banner组件
+
+    // banner组件
      $('.imglist').slick({
          dots:true,
          autoplay:true,
