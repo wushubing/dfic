@@ -428,15 +428,16 @@ a,button:hover{cursor: pointer;}
 }
 .advertising .advleft #advimg{
     width: 80%;
-    height: 360px;
+    height: 300px;
     position: relative;
     display: flex;
+    align-items: center;
 }
 .advertising #advimg img{
     opacity: 0.5;
     position: absolute;
     width: 25%;
-    height: 300px;
+    height: auto;
     box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
 }
 .advertising .advright{

@@ -176,7 +176,7 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=3100) {
+         if (aBody.scrollTop()>=3400) {
              ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
