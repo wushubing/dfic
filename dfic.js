@@ -150,10 +150,10 @@ $(function () {
 
         aWindow.scroll(function () {
         if (aBody.scrollTop()>=1900){
-            Advimg1.animate({opacity:"1",top:"70px"},200);
-            Advimg2.animate({opacity:"1",top:"50px"},300);
-            Advimg3.animate({opacity:"1",top:"80px"},400);
-            Advimg4.animate({opacity:"1",top:"110px"},500);
+            Advimg1.animate({opacity:"1",top:"20px"},200);
+            Advimg2.animate({opacity:"1",top:"0px"},300);
+            Advimg3.animate({opacity:"1",top:"30px"},400);
+            Advimg4.animate({opacity:"1",top:"60px"},500);
             $('.advright').animate({padding:'0',opacity:'1'},400);
         }
     });
