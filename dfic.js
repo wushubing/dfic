@@ -2,7 +2,7 @@ $(function () {
     //获取浏览器可视区域宽高
     var winwidth = $(window).width();
     var winheight = $(window).height();
-     $('.banner').css('height',winheight);
+     $('.banner').css('height',winheight * 0.8);
      $('.imglist a').css('height',winheight);
     $('.core').css('height',winheight);
     $('.core').css("background-size","100% 100%");
@@ -150,10 +150,10 @@ $(function () {
 
         aWindow.scroll(function () {
         if (aBody.scrollTop()>=1900){
-            Advimg1.animate({opacity:"1",top:"20px"},200);
-            Advimg2.animate({opacity:"1",top:"0px"},300);
-            Advimg3.animate({opacity:"1",top:"30px"},400);
-            Advimg4.animate({opacity:"1",top:"60px"},500);
+            Advimg1.animate({opacity:"1",top:"70px"},200);
+            Advimg2.animate({opacity:"1",top:"50px"},300);
+            Advimg3.animate({opacity:"1",top:"80px"},400);
+            Advimg4.animate({opacity:"1",top:"110px"},500);
             $('.advright').animate({padding:'0',opacity:'1'},400);
         }
     });
@@ -176,7 +176,7 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=3200) {
+         if (aBody.scrollTop()>=3100) {
              ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
