@@ -2,7 +2,7 @@ $(function () {
     //获取浏览器可视区域宽高
     var winwidth = $(window).width();
     var winheight = $(window).height();
-     $('.banner').css('height',winheight * 0.8);
+     $('.banner').css('height',winheight * 0.85);
      $('.imglist a').css('height',winheight);
     $('.core').css('height',winheight);
     $('.core').css("background-size","100% 100%");
@@ -176,7 +176,7 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=3400) {
+         if (aBody.scrollTop()>=3100) {
              ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
