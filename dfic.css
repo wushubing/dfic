@@ -366,7 +366,7 @@ a,button:hover{cursor: pointer;}
     color: white;
     left: 0;
     top: 100px;
-    z-index: 99;
+    z-index: 999;
     line-height: 30px;
 }
 .core .core1{
