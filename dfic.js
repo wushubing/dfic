@@ -2,8 +2,8 @@ $(function () {
     //获取浏览器可视区域宽高
     var winwidth = $(window).width();
     var winheight = $(window).height();
-     $('.banner').css('height',winheight * 0.85);
-     $('.imglist a').css('height',winheight);
+     $('.banner').css('height',winheight * 0.8);
+     $('.imglist a').css('height',winheight*0.8);
     $('.core').css('height',winheight);
     $('.core').css("background-size","100% 100%");
 
@@ -113,23 +113,23 @@ $(function () {
          autoplay:true,
          autoplaySpeed:3000,
          slidesToShow:1,
+         infinite:true,
+         speed:300,
+         adaptiveHeight:true,
          arrows:false,
-         pauseOnHover:true
+         pauseOnHover:false
      });
-     $('.banner').mouseenter(function () {
+     $('.imglist a').mouseenter(function () {
          $('.imglist').slickPause();
          $('.bancon').slickPause();
      });
-    $('.banner').mouseout(function () {
+
+    $('.imglist a').mouseout(function () {
         $('.imglist').slickPlay();
         $('.bancon').slickPlay();
     });
-    $('.imglist').mouseenter(function () {
-        $('.bancon').slickPause();
-    });
-    $('.imglist').mouseout(function () {
-        $('.bancon').slickPlay();
-    });
+
+
     $('.slick-prev').click(function () {
         $('.bancon').slickPrev();
     });
@@ -176,11 +176,12 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=3100) {
+         if (aBody.scrollTop()>=3400) {
              ali.animate({margin:"0px",opacity:'1'},500);
          }
          });
-     //回到顶部效果
+
+    //回到顶部效果
      aWindow.scroll(function () {
          if(aBody.scrollTop()>=300) {
              aBack.fadeIn(1000);

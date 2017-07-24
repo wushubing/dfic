@@ -366,8 +366,9 @@ a,button:hover{cursor: pointer;}
     color: white;
     left: 0;
     top: 100px;
-    z-index: 999;
+    z-index: 101;
     line-height: 30px;
+    pointer-events: none;
 }
 .core .core1{
     z-index: 100;
@@ -439,6 +440,30 @@ a,button:hover{cursor: pointer;}
     width: 25%;
     height: auto;
     box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
+}
+.advertising .advimg1{
+    z-index: 10;
+    top: 220px;
+}
+.advertising .advimg2{
+    z-index: 11;
+    top: 200px;
+    left: 23%;
+}
+.advertising .advimg3{
+    z-index: 12;
+    top: 230px;
+    left: 46%;
+}
+.advertising .advimg4{
+    z-index: 13;
+    top: 260px;
+    left: 69%;
+}
+.advertising #advimg img:hover{
+    width: 30%;
+    z-index: 14;
+    box-shadow: 28px 25px 55px rgba(0,0,0,0.3);
 }
 .advertising .advright{
     padding: 200px 0 0;
