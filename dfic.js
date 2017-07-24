@@ -149,7 +149,7 @@ $(function () {
     var aBack    = $('#back');
 
         aWindow.scroll(function () {
-        if (aBody.scrollTop()>=1900){
+        if (aBody.scrollTop()>=1700){
             Advimg1.animate({opacity:"1",top:"20px"},200);
             Advimg2.animate({opacity:"1",top:"0px"},300);
             Advimg3.animate({opacity:"1",top:"30px"},400);
@@ -159,13 +159,13 @@ $(function () {
     });
      aWindow.scroll(function () {
 //         console.log(aBody.scrollTop());
-         if (aBody.scrollTop()>=400) {
+         if (aBody.scrollTop()>=350) {
              $('.header').css('background',"rgba(255,255,255,1)");
              $('.header a').css("color","rgba(0,0,0,0.7)");
              $('#logreg button').css("color","rgba(0,0,0,0.7)");
              $('#searchicon').css("background-image",'url("image/soblack.png")');
              $('#register').css('border-color','rgba(0,0,0,0.7)');
-             $('#piccon a').animate({padding:'0',opacity:1},300);
+             $('#piccon a').animate({padding:'0',opacity:1},200);
 
          }else{
              $('.header').css('background',"rgba(255,255,255,0)");
@@ -176,8 +176,8 @@ $(function () {
          }
      });
      aWindow.scroll(function () {
-         if (aBody.scrollTop()>=3200) {
-             ali.animate({margin:"0px",opacity:'1'},500);
+         if (aBody.scrollTop()>=2800) {
+             ali.animate({margin:"0px",opacity:'1'},300);
          }
          });
 

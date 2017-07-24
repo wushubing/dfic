@@ -437,8 +437,12 @@ a,button:hover{cursor: pointer;}
 .advertising #advimg img{
     opacity: 0.5;
     position: absolute;
-    width: 25%;
     height: auto;
+    width: 25%;
+    transition: width 0.1s;
+    -moz-transition: width 0.1s; /* Firefox 4 */
+    -webkit-transition: width 0.1s; /* Safari 和 Chrome */
+    -o-transition: width 0.1s; /* Opera */
     box-shadow: 18px 15px 45px rgba(0,0,0,0.1);
 }
 .advertising .advimg1{
